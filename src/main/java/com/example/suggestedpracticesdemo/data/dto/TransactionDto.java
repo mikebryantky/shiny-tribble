@@ -14,7 +14,6 @@ import java.util.UUID;
 
 @Data
 public class TransactionDto implements Serializable {
-
     String id;
 
     @NotEmpty

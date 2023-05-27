@@ -32,7 +32,7 @@ class TransactionControllerTest extends Specification {
         def stringData = response.parsedResponseContent.text
         def json = new JsonSlurper().parseText(stringData)
         with(json) {
-            assert json.results.size == 6
+            json.results.size == 6
         }
     }
 
